@@ -1,0 +1,74 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+// @import "dashboard";
+
+table tbody tr td {
+    vertical-align: middle !important;
+}
+hr {
+    border-top: 1px dashed #ffc107;
+}
+
+.white-space-pre {
+    white-space: pre-wrap!important;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap!important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap!important;      /* Opera 4-6 */
+    white-space: -o-pre-wrap!important;    /* Opera 7 */
+    word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
+}
+
+
+label {
+    color : #ffc107 ;
+    text-transform: uppercase;
+}
+
+.o-75 { opacity: .75; }
+.o-50 { opacity: .5; }
+.o-25 { opacity: .25; }
+
+.w-20 { width: 20%; }
+.w-33 { width: 33%; }
+
+.white-space-pre {
+    white-space: pre-wrap!important;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap!important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap!important;      /* Opera 4-6 */
+    white-space: -o-pre-wrap!important;    /* Opera 7 */
+    word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
+}
+
+
+.align-middle { 
+    vertical-align: middle;
+}
+
+   
+    html, body,  .main, .main-container ,.row, .container , .container-fluid{
+      width:100%!important;
+      padding : 0!important;
+      margin : 0!important;
+    }
+    [role="main"] {
+      width:100%!important;
+      margin : 0!important;
+      padding: 0!important;
+      max-width: inherit!important;
+
+
+    }
+    #printable {
+        width:100%!important;
+      margin : 0!important;
+      padding: 0!important;
+    }
+
+  dl,dt, dd {
+    padding : 0.05em 0 0.05em 0.3em!important; 
+  }
+
+  @page{
+    margin-left: 4mm;
+    margin-right: 4mm;
+    margin-top: 3mm;
+    margin-bottom: 3mm;
+    }

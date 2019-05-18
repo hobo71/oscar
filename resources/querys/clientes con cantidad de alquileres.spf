@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>colorIndex</key>
+			<integer>3</integer>
+			<key>database</key>
+			<string>camino</string>
+			<key>host</key>
+			<string>192.168.10.10</string>
+			<key>kcid</key>
+			<string>-2040866963781863064</string>
+			<key>name</key>
+			<string>homestead</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>homestead</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentFilter</key>
+			<dict/>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK8QDwcIFRYXGBkfICEoLDA1OlUkbnVs
+			bNMJCgsMEBRXTlMua2V5c1pOUy5vYmplY3RzViRjbGFzc6MNDg+A
+			AoADgASjERITgAWABoAKgA5UdHlwZVRyb3dzVGtleXNfECZTZWxl
+			Y3Rpb25EZXRhaWxUeXBlUHJpbWFyeUtleWVkRGV0YWlsc9MJCgsa
+			HB6hG4AHoR2ACIAJUzQxNAnSIiMkJVokY2xhc3NuYW1lWCRjbGFz
+			c2VzXxATTlNNdXRhYmxlRGljdGlvbmFyeaMkJidcTlNEaWN0aW9u
+			YXJ5WE5TT2JqZWN00goLKSuhKoALgA3SCy0uL1lOUy5zdHJpbmeA
+			DFJpZNIiIzEyXxAPTlNNdXRhYmxlU3RyaW5nozEzNFhOU1N0cmlu
+			Z1hOU09iamVjdNIiIzY3Xk5TTXV0YWJsZUFycmF5ozY4OVdOU0Fy
+			cmF5WE5TT2JqZWN00iIjJjuiJjxYTlNPYmplY3RfEA9OU0tleWVk
+			QXJjaGl2ZXLRP0BUZGF0YYABAAgAEQAaACMALQAyADcASQBPAFYA
+			XgBpAHAAdAB2AHgAegB+AIAAggCEAIYAiwCQAJUAvgDFAMcAyQDL
+			AM0AzwDTANQA2QDkAO0BAwEHARQBHQEiASQBJgEoAS0BNwE5ATwB
+			QQFTAVcBYAFpAW4BfQGBAYkBkgGXAZoBowG1AbgBvQAAAAAAAAIB
+			AAAAAAAAAEEAAAAAAAAAAAAAAAAAAAG/
+			</data>
+			<key>contentSortCol</key>
+			<string>id</string>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 4320}, {1382, 910}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>select 
+clientes.id,clientes.dni,concat(clientes.nombre, ' ',clientes.apellido) as nombre, clientes.email, count(alquileres.id) as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id
+group by clientes.id
+order by nombre</string>
+			<key>table</key>
+			<string>alquileres</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>152</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select 
+clientes.id,clientes.dni,concat(clientes.nombre, ' ',clientes.apellido) as nombre, clientes.email, count(alquileres.id) as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id
+group by clientes.id
+order by nombre</string>
+		<string>select 
+clientes.id,concat(clientes.nombre, ' ',clientes.apellido) as nombre, clientes.email, count(alquileres.id) as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id
+group by clientes.id
+order by nombre</string>
+		<string>select 
+clientes.id,concat(clientes.nombre, ' ',clientes.apellido) as nombre, clientes.email, count(alquileres.id) as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id
+group by clientes.id</string>
+		<string>select 
+clientes.id,concat(clientes.nombre, ' ',clientes.apellido) as nombre, clientes.email, count(alquileres.id) as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id</string>
+		<string>select 
+clientes.id,concat(clientes.nombre, ' ',clientes.apellido) as nombre, clientes.email, alquileres.id as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id</string>
+		<string>select 
+id,concat(nombre, ' ',apellido) as nombre, email, alquileres.id as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id</string>
+		<string>select 
+id,concat(nombre, ' ',apellido) as nombre, email, count(alquileres.*) as cantidad 
+from clientes 
+inner join alquileres on alquileres.cliente_id = clientes.id</string>
+		<string>select id,concat(nombre, ' ',apellido) as nombre, email, count(alquileres.*) as cantidad from clientes inner join alquileres on clientes.id = alquileres.cliente_id</string>
+		<string>select id,concat(nombre, ' ',apellido) as nombre, email from clientes</string>
+		<string>select id,concat(nombre,apellido) as nombre, email from clientes</string>
+		<string>select id,concat(nombre,apellido) as nombre from clientes</string>
+		<string>select * from clientes</string>
+		<string>select * from alquileres where cliente_id in(1548,1435,1430,1438,1433,1432,1441,1443,1431,1436,1434,1439,1440,1437,1442,1444,1466,1467)</string>
+		<string>select * from alquileres where cliente_id in(1554)</string>
+		<string>select * from alquileres where cliente_id in(1071,1072,1073,1074)</string>
+		<string>select * from alquileres where cliente_id in(1553)</string>
+		<string>select * from alquileres where cliente_id in(1346,1347)</string>
+		<string>select * from alquileres where cliente_id in(1552)</string>
+		<string>select * from alquileres where cliente_id in(1550,1551)</string>
+		<string>select * from alquileres where cliente_id = 1551</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.5-10.2.21-MariaDB-10.2.21+maria~xenial-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

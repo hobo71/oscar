@@ -1,0 +1,18 @@
+version: '3.3'
+
+services:
+   db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     ports:
+       - 3306:3306
+     environment:
+       MYSQL_ROOT_PASSWORD: super_secret
+       MYSQL_DATABASE: oscar_db
+       MYSQL_USER: oscar
+       MYSQL_PASSWORD: oscars_secret 
+
+volumes:
+    db_data: {}

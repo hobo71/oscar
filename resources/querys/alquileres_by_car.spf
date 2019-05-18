@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ContentFilters</key>
+	<dict/>
+	<key>auto_connect</key>
+	<true/>
+	<key>data</key>
+	<dict>
+		<key>connection</key>
+		<dict>
+			<key>colorIndex</key>
+			<integer>3</integer>
+			<key>database</key>
+			<string>camino</string>
+			<key>host</key>
+			<string>192.168.10.10</string>
+			<key>kcid</key>
+			<string>-2040866963781863064</string>
+			<key>name</key>
+			<string>homestead</string>
+			<key>rdbms_type</key>
+			<string>mysql</string>
+			<key>sslCACertFileLocation</key>
+			<string></string>
+			<key>sslCACertFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslCertificateFileLocation</key>
+			<string></string>
+			<key>sslCertificateFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>sslKeyFileLocation</key>
+			<string></string>
+			<key>sslKeyFileLocationEnabled</key>
+			<integer>0</integer>
+			<key>type</key>
+			<string>SPTCPIPConnection</string>
+			<key>useSSL</key>
+			<integer>0</integer>
+			<key>user</key>
+			<string>homestead</string>
+		</dict>
+		<key>session</key>
+		<dict>
+			<key>connectionEncoding</key>
+			<string>utf8</string>
+			<key>contentPageNumber</key>
+			<integer>1</integer>
+			<key>contentSelection</key>
+			<data>
+			YnBsaXN0MDDUAQIDBAUGOTpYJHZlcnNpb25YJG9iamVjdHNZJGFy
+			Y2hpdmVyVCR0b3ASAAGGoK0HCBUWFxgZHSQoLDE2VSRudWxs0wkK
+			CwwQFFdOUy5rZXlzWk5TLm9iamVjdHNWJGNsYXNzow0OD4ACgAOA
+			BKMREhOABYAGgAiADFR0eXBlVHJvd3NUa2V5c18QJlNlbGVjdGlv
+			bkRldGFpbFR5cGVQcmltYXJ5S2V5ZWREZXRhaWxz0wkKCxobHKCg
+			gAfSHh8gIVokY2xhc3NuYW1lWCRjbGFzc2VzXxATTlNNdXRhYmxl
+			RGljdGlvbmFyeaMgIiNcTlNEaWN0aW9uYXJ5WE5TT2JqZWN00goL
+			JSehJoAJgAvSCykqK1lOUy5zdHJpbmeAClJpZNIeHy0uXxAPTlNN
+			dXRhYmxlU3RyaW5noy0vMFhOU1N0cmluZ1hOU09iamVjdNIeHzIz
+			Xk5TTXV0YWJsZUFycmF5ozI0NVdOU0FycmF5WE5TT2JqZWN00h4f
+			IjeiIjhYTlNPYmplY3RfEA9OU0tleWVkQXJjaGl2ZXLROzxUZGF0
+			YYABAAgAEQAaACMALQAyADcARQBLAFIAWgBlAGwAcAByAHQAdgB6
+			AHwAfgCAAIIAhwCMAJEAugDBAMIAwwDFAMoA1QDeAPQA+AEFAQ4B
+			EwEVARcBGQEeASgBKgEtATIBRAFIAVEBWgFfAW4BcgF6AYMBiAGL
+			AZQBpgGpAa4AAAAAAAACAQAAAAAAAAA9AAAAAAAAAAAAAAAAAAAB
+			sA==
+			</data>
+			<key>contentSortColIsAsc</key>
+			<true/>
+			<key>contentViewport</key>
+			<string>{{0, 0}, {1768, 898}}</string>
+			<key>isToolbarVisible</key>
+			<true/>
+			<key>queries</key>
+			<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo_id ,
+marcas.nombre as marca_nombre,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+vehiculos.marca_id as marca_id
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo_id 
+order by cantidad desc 
+limit 10 </string>
+			<key>table</key>
+			<string>vehiculos</string>
+			<key>view</key>
+			<string>SP_VIEW_CUSTOMQUERY</string>
+			<key>windowVerticalDividerPosition</key>
+			<real>152</real>
+		</dict>
+	</dict>
+	<key>encrypted</key>
+	<false/>
+	<key>format</key>
+	<string>connection</string>
+	<key>queryFavorites</key>
+	<array/>
+	<key>queryHistory</key>
+	<array>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo_id ,
+marcas.nombre as marca_nombre,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+vehiculos.marca_id as marca_id
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo_id 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo_id ,
+marcas.nombre as marca_nombre,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+vehiculos.marca_id as marca_id
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+marcas.nombre as marca_nombre,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+vehiculos.marca_id as marca
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+marcas.nombre as marca_nombre,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+vehiculos.marca_id as marca,
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+marcas.nombre as marca_nombre
+
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+vehiculos.marca_id as marca,
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+marcas.nombre as marca_nombre
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+marcas.nombre as marca_nombre
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON vehiculos.marca_id = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+marcas.nombre as marca_nombre
+from ((alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id )
+INNER JOIN marcas ON marca = marcas.id )
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+marcas.nombre as marca_nombre
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+INNER JOIN marcas ON marca = marcas.id 
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente,
+marcas.nombre
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+INNER JOIN marcas ON marca = marcas.id 
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patentem
+marcas.nombre
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+INNER JOIN marcas ON marca = marcas.id 
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+count(*) as cantidad, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+count(*) as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+alquileres.id as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+group by vehiculo 
+order by cantidad desc 
+#limit 10</string>
+		<string>select 
+alquileres.id as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.id as vehiculo_id,
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+group by vehiculo 
+#order by cantidad desc 
+#limit 10</string>
+		<string>select 
+alquileres.id as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.vehiculo_id as vehiculo_id,
+vehiculos.marca_id as marca,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+group by vehiculo 
+#order by cantidad desc 
+#limit 10</string>
+		<string>select 
+alquileres.id as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.marca_id as vehiculo_id,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+group by vehiculo 
+#order by cantidad desc 
+#limit 10</string>
+		<string>select 
+alquileres.id as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.marca_id as vehiculo_id,
+vehiculos.modelo as modelo,
+vehiculos.patente as patente
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+#group by vehiculo 
+#order by cantidad desc 
+#limit 10</string>
+		<string>select 
+alquileres.id as alquiler_id, 
+alquileres.vehiculo_id as vehiculo ,
+vehiculos.marca_id as vehiculo_id,
+vehiculos.modelo as vehiculo_id
+
+from alquileres 
+INNER JOIN vehiculos ON alquileres.vehiculo_id = vehiculos.id 
+#group by vehiculo 
+#order by cantidad desc 
+#limit 10</string>
+	</array>
+	<key>rdbms_type</key>
+	<string>mysql</string>
+	<key>rdbms_version</key>
+	<string>5.5.5-10.2.19-MariaDB-10.2.19+maria~xenial-log</string>
+	<key>version</key>
+	<integer>1</integer>
+</dict>
+</plist>

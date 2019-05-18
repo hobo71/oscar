@@ -1,0 +1,93 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "dashboard";
+
+body {
+    padding-bottom: 3rem;
+    
+}
+table tbody tr td {
+    vertical-align: middle !important;
+}
+hr {
+    border-top: 1px dashed rgba(#ffc107,.4);
+}
+.modal-content  {
+    border: 0;
+}
+.modal-content , .card { 
+    border-radius: 8px;
+}
+.btn, .form-control, .form-control-lg, .badge {
+    border-radius: 5px;
+}
+
+.white-space-pre {
+    white-space: pre-wrap!important;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap!important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap!important;      /* Opera 4-6 */
+    white-space: -o-pre-wrap!important;    /* Opera 7 */
+    word-wrap: break-word!important;       /* Internet Explorer 5.5+ */
+}
+
+
+.border-dotted-top {
+    border-top: 2px dashed white !important;
+}
+
+.card {
+    border:1px solid #f3f3f3;
+    box-shadow: 0px 2px 7px -1px rgba(0,0,0,.06);
+    transition : box-shadow .3s;
+    &:hover {
+      box-shadow: 0px 1px 6px -1px rgba(0,0,0,.3);
+    }
+
+}
+
+
+label {
+    color : #ffc107 ;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: 0.07em;
+    margin : 6px; padding: 0;
+}
+
+.o-75 { opacity: .75; }
+.o-50 { opacity: .5; }
+.o-25 { opacity: .25; }
+
+.w-20 { width: 20%; }
+.w-33 { width: 33%; }
+
+
+
+.align-middle { 
+    vertical-align: middle;
+}
+
+@media print {
+   
+    html, body,  .main, .main-container ,.row{
+      width:100%!important;
+
+    }
+    [role="main"] {
+      width:105%!important;
+      margin : 0!important;
+      padding: 0!important;
+
+    }
+    #printable {
+        width:105%!important;
+      margin : 0!important;
+      padding: 0!important;
+    }
+  }
+
+  @page{
+    margin-left: 4mm;
+    margin-right: 4mm;
+    margin-top: 3mm;
+    margin-bottom: 3mm;
+    }

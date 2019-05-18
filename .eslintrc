@@ -1,0 +1,7 @@
+"linters": {
+	
+    "eslint": {
+    	"env": {"PATH":"/Users/pablolizardo/.nvm/versions/node/v6.13.0/bin/eslint"},
+        "selector": "text.html.vue, source.js - meta.attribute-with-value"
+    }
+}
