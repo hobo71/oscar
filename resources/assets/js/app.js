@@ -4,17 +4,19 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import VueRouter from 'vue-router'
+import VueAxios from 'vue-axios'
+import axios from 'axios'
 
+import "./bootstrap"
 
-
-require("./bootstrap");
-
-// Vue.use(VueRouter)
 
 window.Vue = require("vue");
 
 Vue.use(VueRouter)
+Vue.use(VueAxios, axios)
 
+axios.defaults.baseURL = '/api/'
+axios.defaults.headers = {'Access-Control-Allow-Origin': '*'}
 
 Vue.prototype._appApi =  document.head.querySelector('meta[name="app-api"]').content;
 

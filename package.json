@@ -26,6 +26,7 @@
         "fullcalendar-scheduler": "^1.9.4",
         "moment": "^2.22.2",
         "reveal.js": "^3.7.0",
+        "vue-axios": "^2.1.4",
         "vue-full-calendar": "^2.7.0",
         "vue-router": "^3.0.2"
     }

@@ -1,39 +1,38 @@
 import axios from "axios";
 export default {
   
-  api_url :  document.head.querySelector('meta[name="app-api"]').content,
   getAlquileresDataForAgenda() {
-    return axios.get(this.api_url+'alquileres/data')
+    return axios.get("alquileres/data")
   },
   getServices() {
-    return axios.get(this.api_url+"services");
+    return axios.get("services");
   },
   getEmpresa(id) {
-    return axios.get(this.api_url+"empresas/" + id);
+    return axios.get("empresas/" + id);
   },
   getEmpresas() {
-    return axios.get(this.api_url+"empresas");
+    return axios.get("empresas");
   },
   getCliente(id) {
-    return axios.get(this.api_url+"clientes/" + id);
+    return axios.get("clientes/" + id);
   },
   getClientes() {
-    return axios.get(this.api_url+"clientes");
+    return axios.get("clientes");
   },
   getVehiculo(id) {
-    return axios.get(this.api_url+"vehiculos/" + id);
+    return axios.get("vehiculos/" + id);
   },
   getVehiculos() {
-    return axios.get(this.api_url+"vehiculos");
+    return axios.get("vehiculos");
   },
   getMarcas() {
-    return axios.get(this.api_url+"marcas");
+    return axios.get("marcas");
   },
   getAlquiler(id) {
-    return axios.get(this.api_url+"alquileres/" + id);
+    return axios.get("alquileres/" + id);
   },
   getAlquileres(page, cliente_id, vehiculo_id) {
-    let baseUrl = this.api_url+"alquileres?";
+    let baseUrl = "alquileres?";
 
     if (page) baseUrl += "page=" + page + "&";
     if (cliente_id != null) baseUrl += "cliente=" + cliente_id + "&";
